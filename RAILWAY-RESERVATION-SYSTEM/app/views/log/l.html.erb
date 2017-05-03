@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html >
+<head>
+<style>
+body {
+    background-color: lightblue;  }
+</style>
+<title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<h1>current users can login here </h1>
+<h2>LOGIN<h2>
+<div class="mainContent">
+  <div class="grid">
+   
+    
+
+        <label for="email">Email</label><br>
+        <input class="shortInput" id="email" type="text"><br>
+
+        <label for="password">Password</label><br>
+        <input class="shortInput" id="password" type="password"><br>
+
+    
+
+        
+        
+         
+
+      </form>
+
+    <%= link_to "LOGIN",{controller: "log",action: "wel"}, class:"navbar-brand topnav" %>
+
+  </div><!-- end grid -->
+</div><!-- end mainContent -->
+
+</html>
+
+
+

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html >
+<head>
+
+<title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<h1> PAYMENT </h1>
+<div class="mainContent">
+  <div class="grid">
+   
+    <p class="centeredDescription col_4">Already signed up? You can <a href="">log in here.</a></p>
+    <div class="col_1">
+      <form class="signupForm">
+       <p>CARD NUMBER </P>
+       <%= text_field_tag 'CARD NUMBER', nil, :maxlength => 16, :size => 50 %>
+
+<br>
+<br>
+<br>
+<p>NAME </P>
+        <%= text_field_tag 'NAME', nil, :maxlength => 15, :size => 20 %>
+
+<br>
+<br>
+<br>
+<p>CVV </P>
+<%= text_field_tag 'CVV', nil, :maxlength => 3, :size => 5 %>
+
+<br>
+<br>
+<br>
+<p>EXPIRATION DATE </P>
+<%= text_field_tag 'EXPIRATION DATE', nil, :maxlength => 5, :size => 5 %>
+
+<br>
+<br>
+<br>
+SECURE PASSWORD:
+ <input type="password" name="SECURE PASSWORD">
+
+
+
+
+        
+        
+        
+         
+
+      </form>
+<%= button_to "PAY NOW",{controller: "payment",action: "yo"}, class:"navbar-brand topnav" %>
+      
+    
+
+</html>
+
+
+
+

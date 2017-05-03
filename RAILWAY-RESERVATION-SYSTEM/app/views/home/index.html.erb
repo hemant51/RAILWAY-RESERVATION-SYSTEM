@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+<title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+
+  <title>Bootstrap Case</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+         <%= link_to "LOGIN",{controller: "log",action: "l"}, class:"navbar-brand topnav" %>
+
+    </div>
+    <ul class="nav navbar-nav">
+      
+
+<ul class="nav navbar-nav">
+      <%= link_to "SIGN UP",{controller: "login",action: "log"}, class:"navbar-brand topnav" %>
+      
+          <%= link_to "TRAIN SEARCH",{controller: "rail",action: "details"}, class:"navbar-brand topnav" %>
+      </li>
+      
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+          <%= link_to "ABOUT US",{controller: "about",action: "us"}, class:"navbar-brand topnav" %>
+    </ul>
+<ul class="nav navbar-nav navbar-right">
+          <%= link_to "TRAINS",{controller: "rail",action: "index"}, class:"navbar-brand topnav" %>
+    </ul>
+  </div>
+</nav>
+  <style>
+body {
+    background-color: lightblue;  }
+h3 {
+    font-size: 80px;
+}
+
+</style>
+<div class="container">
+                                                             <h3>INDIAN RAILWAYS </h3>
+<p>welcome to indian railways.Book your railways ticket with just few clicks here .Get the best prize for your ticket.Rates Branch System helps the
+Indian Railways to find the shortest
+distance between the stations for
+coaching and goods traffic.</p>
+
+
+
+  <%=image_tag("C:\Sites\p\app\views\home\indian-railway.jpg")%>
+
+
+					
+</body>
+</html>

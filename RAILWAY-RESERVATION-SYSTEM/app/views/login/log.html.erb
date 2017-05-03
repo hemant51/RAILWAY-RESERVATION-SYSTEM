@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html >
+<head>
+<style>
+body {
+    background-color: lightblue;  }
+</style>
+
+<title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<h1> SIGN UP </h1>
+<div class="mainContent">
+  <div class="grid">
+   
+ <p class="centeredDescription col_4">Already signed up? 
+You can <%= link_to "log in here",{controller: "log",action: "l"}, class:"navbar-brand topnav" %>
+    <div class="col_1">
+
+
+      <form class="signupForm">
+<br>
+<br>
+ <p>FULL NAME</P>
+<%= text_field_tag 'EXPIRATION DATE', nil, :maxlength => 20, :size => 30 %>
+<br>
+<br>
+<br>
+
+<p>EMAIL</P>
+<%= text_field_tag 'EXPIRATION DATE', nil, :maxlength => 40, :size => 35 %>
+<br>
+
+<br>
+<br>
+<br>
+
+  PASSWORD:
+ <input type="password" name="SECURE PASSWORD">
+<br>
+<br>
+<br>
+
+CONFIRM PASSWORD:
+    <input type="password"     name="SECURE PASSWORD">
+
+<br>
+<br>
+<br>
+
+<p>ADRESSS</P>
+<%= text_field_tag 'EXPIRATION DATE', nil, :maxlength => 20, :size => 30 %>
+<br>
+<br>
+<br>
+<p>AGE</P>
+<%= text_field_tag 'EXPIRATION DATE', nil, :maxlength => 20, :size => 30 %>
+     
+<br>
+<br>
+<br>   
+      
+
+      </form>
+
+    </div><!-- end column 2 contact form -->
+
+ 
+  </div><!-- end grid -->
+</div><!-- end mainContent -->
+ <%= button_to "CREATE ACCOUNT",{controller: "login",action: "done"}, class:"navbar-brand topnav" %> 
+</body>
+</html>
+
+
+

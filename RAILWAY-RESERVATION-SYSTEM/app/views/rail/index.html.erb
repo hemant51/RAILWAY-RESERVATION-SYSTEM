@@ -1,0 +1,20 @@
+<style>
+body {
+    background-color: lightblue;  }
+</style>
+<% @trains.each do |tr| %>
+TRAIN NUMBER =   <%= tr.train_no %>
+   <br>
+ NAME = <%= tr.train_name %>
+   <br>
+ORIGIN =   <%= tr.origin %>
+   <br>   
+  DESTINATION =  <%= tr.destination %>
+   <br>
+  DEPARTURE TIME =  <%= tr.dept_time %>
+      <br>
+ARRIVAL =   <%= tr.arr_time %>
+     <br>
+<%= link_to "BOOK NOW",{controller: "payment",action: "fare"}, class:"navbar-brand topnav" %>
+  <br> 
+<%end %>

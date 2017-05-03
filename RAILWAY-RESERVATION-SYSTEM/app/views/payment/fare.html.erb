@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<body>
+<style>
+table, th, td {
+    border: 1px solid black;
+}
+
+
+p  {
+    
+    font-family: courier;
+    font-size: 160%;
+}
+</style>
+</head>
+<body>
+
+<table style="width:100%">
+<table style="width:100%">
+  <tr>
+    <th>GENERAL</th>
+    <th>SLEEPER</th> 
+    <th>AC</th>
+  </tr>
+  <tr>
+    <td>Rs.50</td>
+    <td>Rs.100</td>
+    <td>Rs.200</td>
+  </tr>
+  
+</table>
+<Br>
+<Br>
+<Br>
+<Br>
+<p>payment will be done through only debit card only .click here to select your coach type</p>
+select coach type
+
+<%= link_to "GENERAL",{controller: "payment",action: "pay"}, class:"navbar-brand topnav" %>
+<%= link_to "SLEEPER",{controller: "payment",action: "pay"}, class:"navbar-brand topnav" %>
+<%= link_to "AC",{controller: "payment",action: "pay"}, class:"navbar-brand topnav" %>
+
+
+</body>
+</html>

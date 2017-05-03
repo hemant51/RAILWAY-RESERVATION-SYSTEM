@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  train_no: 
+  train_name: MyText
+  origin: MyText
+  destination: MyText
+  dept_time: 2017-04-23 23:50:59
+  arr_time: 2017-04-23 23:50:59
+
+two:
+  train_no: 
+  train_name: MyText
+  origin: MyText
+  destination: MyText
+  dept_time: 2017-04-23 23:50:59
+  arr_time: 2017-04-23 23:50:59

@@ -1,0 +1,2 @@
+module RailHelper
+end
